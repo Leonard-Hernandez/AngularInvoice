@@ -5,9 +5,10 @@ import { Company } from '../../models/company';
   selector: 'company-view',
   standalone: true,
   imports: [],
+  templateUrl: './company-view.component.html'
 })
 export class CompanyViewComponent {
 
-  @Input() company:Company = {name:'', fiscalNumber:0};
+  @Input() company: Company = {name:'', fiscalNumber:0};
 
 }

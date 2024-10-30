@@ -11,12 +11,7 @@
       </thead>
       <tbody>
         @for (item of items; track $index) {
-        <tr>
-          <td>{{ item.id }}</td>
-          <td>{{ item.product }}</td>
-          <td>{{ item.price }}</td>
-          <td>{{ item.quantity }}</td>
-        </tr>
+          <tr row-item [item]="item"></tr>
         }
       </tbody>
     </table>
