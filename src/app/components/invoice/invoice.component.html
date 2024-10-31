@@ -4,20 +4,18 @@
       <h2>Ejemplo Factura</h2>
     </div>
     <div class="card-body">
-        <invoice-view [id]="invoice.id" [name]="invoice.name">
-
-        </invoice-view>
-        <div class="row my-3">
-            <div class="col">
-                <client-view [client]="invoice.client"></client-view>
-            </div>
-      
-            <div class="col">
-              <company-view [company]="invoice.company"></company-view>
-            </div>
+      <invoice-view [id]="invoice.id" [name]="invoice.name" />
+      <div class="row my-3">
+        <div class="col">
+          <client-view [client]="invoice.client" />
         </div>
-      <list-items [items]="invoice.items"></list-items>
+
+        <div class="col">
+          <company-view [company]="invoice.company" />
+        </div>
+        <list-items [items]="invoice.items" />
+        <total [total]="invoice.total" />
+      </div>
     </div>
   </div>
-</div>
-<footer>commit desde manjaro</footer>
+  <footer>commit desde manjaro</footer>
