@@ -10,4 +10,9 @@ import { RowItemComponent } from '../row-item/row-item.component';
 })
 export class ListItemsComponent {
   @Input() items: Item[] =[];
+
+  onRemove(id: number) {
+  
+  }
+  
 }
